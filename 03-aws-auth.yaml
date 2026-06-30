@@ -13,7 +13,7 @@ data:
       username: suresh
   mapUsers: |
     - groups:
-      - ellamma-ecommerce-reader 
+      - ellamma-ecommerce-admin 
       userarn: arn:aws:iam::367012942501:user/ramesh-tl
       username: ramesh-tl
 kind: ConfigMap
