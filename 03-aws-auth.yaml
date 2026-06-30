@@ -11,6 +11,11 @@ data:
       - ellamma-ecommerce-reader 
       userarn: arn:aws:iam::367012942501:user/suresh
       username: suresh
+  mapUsers: |
+    - groups:
+      - ellamma-ecommerce-reader 
+      userarn: arn:aws:iam::367012942501:user/ramesh-tl
+      username: ramesh-tl
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-06-30T07:09:00Z"
