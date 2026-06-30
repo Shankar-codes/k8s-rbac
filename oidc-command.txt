@@ -1,0 +1,8 @@
+# create oidc before the service account creation
+eksctl utils associate-iam-oidc-provider --cluster <clustename> --approve
+
+
+# creating the service account using command
+eksctl create iamserviceaccount --cluster roboshop --name secret-reader --namespace ellamma-ecommerce --attach-policy-arn arn:aws:iam::367012942501:policy/RoboshopMySQLSecret --approve
+
+
