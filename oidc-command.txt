@@ -6,3 +6,5 @@ eksctl utils associate-iam-oidc-provider --cluster <clustename> --approve
 eksctl create iamserviceaccount --cluster roboshop --name secret-reader --namespace ellamma-ecommerce --attach-policy-arn arn:aws:iam::367012942501:policy/RoboshopMySQLSecret --approve
 
 
+# to see the password using aws cli
+aws secretsmanager get-secret-value --secret-id roboshop/dev/mysql_password --query SecretString --output text
