@@ -13,9 +13,13 @@ data:
       username: suresh
   mapUsers: |
     - groups:
-      - ellamma-ecommerce-admin 
-      userarn: arn:aws:iam::367012942501:user/ramesh-tl
-      username: ramesh-tl
+      - ellamma-ecommerce-reader 
+      userarn: arn:aws:iam::367012942501:user/NTR
+      username: NTR
+    - groups:
+      - ellamma-ecommerce-reader 
+      userarn: arn:aws:iam::367012942501:user/balayya
+      username: balayya
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-06-30T07:09:00Z"
