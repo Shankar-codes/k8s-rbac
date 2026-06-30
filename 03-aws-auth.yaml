@@ -21,4 +21,5 @@ metadata:
   creationTimestamp: "2026-06-30T07:09:00Z"
   name: aws-auth
   namespace: kube-system
+  # resourceVersion: "1230" # every time this will changes. so just comment it and it takes dynamically
   uid: 305c5953-d313-451f-a77a-7b4f73578bf1
