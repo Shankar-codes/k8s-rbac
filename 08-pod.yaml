@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: aws-cli 
+  namespace: ellamma-ecommerce
+spec:
+  serviceAccount: secret-reader #this service is must to access secrets
+  containers:
+  - name: aws-cli
+    image: amazon/aws-cli
+    command: ["sleep", "10000"]
